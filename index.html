@@ -61,6 +61,7 @@
       .yes-selected img {
         display: block;
       }
+	  
     </style>
   </head>
   <body>
@@ -77,9 +78,12 @@
 	  <div id="text">!!אביה פאקינג שתוקקק</div>
     <div class="buttons">
       <button id="yes">תבוסה</button>
-      
+	  <button id="no">גול יפה מאד</button>
     </div>
     <div class="yes-selected">
+	
+    </div>
+	 <div class="no-selected">
     </div>
 	<div class="btn" onclick="window.location.href='defeated.html'"></div>
 	
@@ -88,8 +92,12 @@
 	document.getElementById("yes").addEventListener("click", function() {
         alert("אביה שתוקקקק");
 		});
-document.getElementById("yes").addEventListener("click", function() {
+	document.getElementById("yes").addEventListener("click", function() {
         window.location.href='defeated.html';
+		});
+		
+	document.getElementById("no").addEventListener("click", function() {
+        window.location.href='goal.html';
 		});
     </script>
   </body>

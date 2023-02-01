@@ -54,6 +54,7 @@
     </style>
   </head>
   <body>
+  
     <div class="buttons">
       <button id="yes">חזרה לדף הראשי</button>
       
@@ -61,7 +62,6 @@
     <div class="yes-selected">
     </div>
 	<div class="btn" onclick="window.location.href='index.html'"></div>
-	
 	</div>
     <script>
 	document.getElementById("yes").addEventListener("click", function() {
@@ -69,6 +69,9 @@
 		});
     document.getElementById("yes").addEventListener("click", function() {
         window.location.href='index.html';
+		});
+		    document.getElementById("no").addEventListener("click", function() {
+        window.location.href='goal.html';
 		});
     </script>
   </body>
