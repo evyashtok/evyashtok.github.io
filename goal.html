@@ -13,6 +13,43 @@
         height: 100vh;
       }
 
+	.buttons {
+        display: flex;
+        justify-self: start;
+        margin-top: 0px;
+      }
+
+      button {
+		padding: 10px 20px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+		margin: 0 30px;
+      }
+
+      img {
+        display: none;
+      }
+
+      .yes-selected img {
+        display: block;
+      }
+      button {
+          position: absolute;
+		  left: 50px;
+		  top: 20px;
+		padding: 10px 20px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+		margin: 0 30px;
+      }
 </style>
   </head>
   <body>
@@ -21,9 +58,21 @@
   <source src="movie.ogg" type="video/ogg">
 .
 	</video>
- 
+ <div class="buttons">
+      <button id="yes">חזרה לדף הראשי</button>
+      
+    </div>
+    <div class="yes-selected">
+    </div>
+	<div class="btn" onclick="window.location.href='index.html'"></div>
+	</div>
     <script>
-	
+	document.getElementById("yes").addEventListener("click", function() {
+        alert("אביה שתוקקקק");
+		});
+    document.getElementById("yes").addEventListener("click", function() {
+        window.location.href='index.html';
+		});
 
     </script>
   </body>
